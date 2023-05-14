@@ -32,4 +32,20 @@ public class CalculatorTest {
         Assertions.assertThat(result).isNotZero();
         Assertions.assertThat(result).isCloseTo(4, Percentage.withPercentage(90));
     }
+
+    @Test
+    void whenSubtractTwoNumbersReturnDifferenceOfTheNumbers(){
+        // given
+//        Calculator calculator = new Calculator();
+        //when
+        int result = calculator.subtraction(8, 5);
+
+        //then
+        assertEquals(3, result);
+        assertNotEquals(5, result);
+        Assertions.assertThat(result).isPositive();
+        Assertions.assertThat(result).isGreaterThan(2);
+        Assertions.assertThat(result).isLessThan(4);
+
+    }
 }

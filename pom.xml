@@ -27,6 +27,13 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
+            <version>5.6.1</version><!-- aktualna wersja może ulec zmianie -->
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
